@@ -13,6 +13,9 @@
 .dark02{
   color: rgba(39, 39, 39, 0.6);
 }
+.pink{
+  color: #E55473;
+}
 .bg01{
   background-color: #E55473;
 }
@@ -128,7 +131,7 @@ section,
 }
 
 .flower-image img{
-  width: 70%;
+  width: 60%;
 
 }
 #lightpink{
@@ -160,9 +163,36 @@ section,
 }
 .featured-desc{
   max-width: 600px;
-  width: 100%;
+  width: 90%;
   margin: 24px auto 0;
 }
+
+/* support section style */
+.support{
+  padding: 85px;
+  margin-top: 128px;
+}
+.support-container{
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.support-card{
+  text-align: center;
+}
+.support-card img{
+  width: 88px;
+}
+
+
+/* hot deal section */
+
+
+
+
+
+
 /* small size screen media query */
 
 @media screen and (max-width:576px){
@@ -181,7 +211,7 @@ section,
     width: 100%;
   }
   .header-title{
-    font-size: 50px;
+    font-size: 30px;
     padding: 0 30px;
   }
   .header-image{
@@ -203,6 +233,10 @@ section,
   .flower-image img{
   width: 50%;
 
+}
+
+.support-container{
+  flex-direction: column;
 }
 }
 /* ======================= */
@@ -239,7 +273,9 @@ section,
     align-self: center;
     margin-bottom: 30px;
   }
-
+.support-container{
+  flex-direction: column;
+}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -253,6 +289,7 @@ section,
   .header-content{
   max-width: 450px;
 }
+
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1440px){
