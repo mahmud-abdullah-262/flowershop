@@ -212,7 +212,29 @@ section,
   max-width: 318px;
 }
 
-
+/* instagram section */
+.instagram{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 128px;
+  gap: 32px;
+}
+.instagram-content{
+ max-width: 600px;
+ width: 95%;
+}
+.image-container{
+  max-width: 1440px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.image-container img{
+  width: 100%;
+}
 
 /* small size screen media query */
 
@@ -267,6 +289,11 @@ section,
 .hotdeal-image{
   order: -1;
 }
+
+.image-container{
+  padding: 30px;
+  grid-template-columns: 1fr;
+}
 }
 /* ======================= */
 
@@ -312,6 +339,10 @@ section,
 }
 .hotdeal-image{
   order: -1;
+}
+.image-container{
+  padding: 30px;
+  grid-template-columns: repeat(2, 1fr);
 }
 }
 
